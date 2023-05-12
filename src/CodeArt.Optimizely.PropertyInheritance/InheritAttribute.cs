@@ -1,4 +1,4 @@
-﻿namespace PropertyInheritance.Inheritance
+﻿namespace CodeArt.Optimizely.PropertyInheritance
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class InheritAttribute : Attribute

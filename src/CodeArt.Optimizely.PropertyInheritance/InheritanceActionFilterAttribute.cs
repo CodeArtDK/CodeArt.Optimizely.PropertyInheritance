@@ -1,7 +1,8 @@
-﻿using EPiServer.Web.Mvc;
+﻿using EPiServer.Core;
+using EPiServer.Web.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace PropertyInheritance.Inheritance
+namespace CodeArt.Optimizely.PropertyInheritance
 {
     public class ApplyInheritanceAttribute : ActionFilterAttribute
     {

@@ -1,8 +1,10 @@
-﻿using EPiServer.Data.Entity;
+﻿using EPiServer;
+using EPiServer.Core;
+using EPiServer.Data.Entity;
 using EPiServer.ServiceLocation;
 using System.Reflection;
 
-namespace PropertyInheritance.Inheritance
+namespace CodeArt.Optimizely.PropertyInheritance
 {
     public static class PropertyInheritor
     {

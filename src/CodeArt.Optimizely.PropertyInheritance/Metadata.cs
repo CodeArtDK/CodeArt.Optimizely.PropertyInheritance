@@ -4,14 +4,16 @@ using EPiServer.Shell.ObjectEditing;
 using EPiServer.ServiceLocation;
 using EPiServer.Shell.ObjectEditing.EditorDescriptors;
 using EPiServer.Cms.Shell.Extensions;
+using EPiServer.Cms.Shell;
+using EPiServer.Core;
 
-namespace PropertyInheritance.Inheritance
+namespace CodeArt.Optimizely.PropertyInheritance
 {
     [InitializableModule]
     [ModuleDependency(typeof(EPiServer.Cms.Shell.InitializableModule))]
-    public class PropertyDefaultValueInitialization : IInitializableModule
+    public class PropertyDefaultValueInitialization : InitializableModule
     {
-        public void Initialize(InitializationEngine context)
+        public new void Initialize(InitializationEngine context)
         {
             context.InitComplete += (sender, args) =>
             {
@@ -42,8 +44,7 @@ namespace PropertyInheritance.Inheritance
                         continue;
                     }
                     //Check if this has it's own value - or if it is inherited
-                    //property.Model.Value
-                    //property.FindOwnerContent()
+
                     var pd = property.Model as PropertyData;
                     if (pd != null && pd.Value != null)
                     {

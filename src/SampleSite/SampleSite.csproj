@@ -20,4 +20,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Translations\**\*" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CodeArt.Optimizely.PropertyInheritance\CodeArt.Optimizely.PropertyInheritance.csproj" />
+  </ItemGroup>
 </Project>

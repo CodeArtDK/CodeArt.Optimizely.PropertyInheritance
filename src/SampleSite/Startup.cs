@@ -4,6 +4,9 @@ using EPiServer.Cms.UI.AspNetIdentity;
 using EPiServer.Scheduler;
 using EPiServer.ServiceLocation;
 using EPiServer.Web.Routing;
+using CodeArt.Optimizely.PropertyInheritance;
+using EPiServer.Framework.Hosting;
+using EPiServer.Web.Hosting;
 
 namespace SampleSite;
 
@@ -25,10 +28,17 @@ public class Startup
             services.Configure<SchedulerOptions>(options => options.Enabled = false);
         }
 
+
+        services.Configure<CompositeFileProviderOptions>(c =>
+        {
+            c.BasePathFileProviders.Add(new MappingPhysicalFileProvider("/EPiServer/CodeArt.Optimizely.PropertyInheritance", string.Empty, Path.Combine(_webHostingEnvironment.ContentRootPath, @"..\", @"CodeArt.Optimizely.PropertyInheritance\modules\_protected\CodeArt.Optimizely.PropertyInheritance\")));
+        });
+
         services
             .AddCmsAspNetIdentity<ApplicationUser>()
             .AddCms()
             .AddAlloy()
+            .AddPropertyInheritance()
             .AddAdminUserRegistration()
             .AddEmbeddedLocalization<Startup>();
 

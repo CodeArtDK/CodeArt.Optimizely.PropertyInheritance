@@ -4,6 +4,27 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	 <PackageId>CodeArt.Optimizely.PropertyInheritance</PackageId>
+	  <Title>Property Inheritance Addon</Title>
+	  <Authors>CodeArt Team</Authors>
+	  <Company>CodeArt</Company>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageProjectUrl>https://github.com/CodeArtDK/CodeArt.Optimizely.PropertyInheritance</PackageProjectUrl>
+	  <PackageIcon>icon.png</PackageIcon>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <Description>Addon that makes it easy to support property inheritance in Optimizely CMS</Description>
+	  <PackageReleaseNotes>https://example.com/releasenotes</PackageReleaseNotes>
+	  <PackageTags>Optimizely OptimizelyModulePackage ThirdPartyAddOn</PackageTags>
+	  <RepositoryUrl>https://github.com/CodeArtDK/CodeArt.Optimizely.PropertyInheritance.git</RepositoryUrl>
   </PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="EPiServer.CMS" Version="12.18.0" />
+	</ItemGroup>
+
 
 </Project>

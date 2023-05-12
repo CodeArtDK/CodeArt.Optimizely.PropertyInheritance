@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using SampleSite.Business.Rendering;
 using EPiServer.SpecializedProperties;
 using EPiServer.Web;
+using CodeArt.Optimizely.PropertyInheritance;
 
 namespace SampleSite.Models.Pages;
 
@@ -27,6 +28,9 @@ public abstract class SitePageData : PageData, ICustomCssInContentArea
         }
         set => this.SetPropertyValue(p => p.MetaTitle, value);
     }
+
+    [Inherit(InheritIfNullOrEmpty = true,SearchAllAncestors =true)]
+    public virtual string Area { get; set; }
 
     [Display(
         GroupName = Globals.GroupNames.MetaData,

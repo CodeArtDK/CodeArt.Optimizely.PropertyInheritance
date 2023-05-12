@@ -1,0 +1,7 @@
+.Sleek .epi-form-container__section__row .epi-form-container__section__label-container > label .dijitIcon.icon-inheritance {
+    background-image: url(./inheritance.svg);
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: 8px;
+}
