@@ -3,17 +3,15 @@ using EPiServer.Framework;
 using EPiServer.Shell.ObjectEditing;
 using EPiServer.ServiceLocation;
 using EPiServer.Shell.ObjectEditing.EditorDescriptors;
-using EPiServer.Cms.Shell.Extensions;
-using EPiServer.Cms.Shell;
 using EPiServer.Core;
 
 namespace CodeArt.Optimizely.PropertyInheritance
 {
     [InitializableModule]
     [ModuleDependency(typeof(EPiServer.Cms.Shell.InitializableModule))]
-    public class PropertyDefaultValueInitialization : InitializableModule
+    public class PropertyDefaultValueInitialization : IInitializableModule
     {
-        public new void Initialize(InitializationEngine context)
+        public void Initialize(InitializationEngine context)
         {
             context.InitComplete += (sender, args) =>
             {
