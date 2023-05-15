@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CodeArt.Optimizely.PropertyInheritance</id>
+    <version>1.0.0</version>
+    <title>CodeArt.Optimizely.PropertyInheritance</title>
+    <authors>CodeArt Team</authors>
+    <owners>CodeArt Team</owners>
+    <Company>CodeArt</Company>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Addon that makes it easy to support property inheritance in Optimizely CMS</description>
+    <releaseNotes/>
+    <copyright>Copyright 2023</copyright>
+    <tags>episerver optimizely property</tags>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/CodeArtDK/CodeArt.Optimizely.PropertyInheritance</projectUrl>
+    <RepositoryUrl>https://github.com/CodeArtDK/CodeArt.Optimizely.PropertyInheritance.git</RepositoryUrl>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="EPiServer.CMS.UI.Core" version="[$CmsUIVersion$, $CmsUINextMajorVersion$)" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/any/modules/_protected/CodeArt.Optimizely.PropertyInheritance/CodeArt.Optimizely.PropertyInheritance.zip" buildAction="None" copyToOutput="true"  />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="src\CodeArt.Optimizely.PropertyInheritance\bin\$configuration$\CodeArt.Optimizely.PropertyInheritance.dll" target="lib\net6.0\" />
+
+    <file src="out\CodeArt.Optimizely.PropertyInheritance\CodeArt.Optimizely.PropertyInheritance.zip" target="contentFiles\any\any\modules\_protected\CodeArt.Optimizely.PropertyInheritance\" />
+
+    <file src="build\CopyZipFiles.targets" target="build\net6.0\CodeArt.Optimizely.PropertyInheritance.targets" />
+	
+	<file src="src\CodeArt.Optimizely.PropertyInheritance\readme.txt" target="" />
+  </files>
+</package>
