@@ -31,6 +31,8 @@ Set-Location $workingDirectory\out\CodeArt.Optimizely.PropertyInheritance
 Start-Process -NoNewWindow -Wait -FilePath $zip -ArgumentList "a", "CodeArt.Optimizely.PropertyInheritance.zip", "$version", "module.config"
 Set-Location $workingDirectory
 
+Write-Output "Start creating package '$configuration'"
+
 # Packaging public packages
 dotnet pack -c $configuration /p:PackageVersion=$version /p:CmsUIVersion=$cmsUIVersion /p:CmsUINextMajorVersion=$cmsUINextMajorVersion /p:RuntimeVersion=$runtimeVersion /p:RuntimeNextMajorVersion=$runtimeNextMajorVersion src/PropertyInheritanceSampleSite.sln
 

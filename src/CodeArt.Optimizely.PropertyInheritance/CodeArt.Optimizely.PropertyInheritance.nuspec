@@ -25,7 +25,7 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="src\CodeArt.Optimizely.PropertyInheritance\bin\$configuration$\CodeArt.Optimizely.PropertyInheritance.dll" target="lib\net6.0\" />
+    <file src="src\CodeArt.Optimizely.PropertyInheritance\bin\Debug\net6.0\CodeArt.Optimizely.PropertyInheritance.dll" target="lib\net6.0\" />
 
     <file src="out\CodeArt.Optimizely.PropertyInheritance\CodeArt.Optimizely.PropertyInheritance.zip" target="contentFiles\any\any\modules\_protected\CodeArt.Optimizely.PropertyInheritance\" />
 
