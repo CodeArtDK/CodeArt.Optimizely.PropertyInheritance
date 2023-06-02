@@ -16,7 +16,7 @@
         /// <summary>
         /// Inherit this value if it's null or empty
         /// </summary>
-        public bool InheritIfNullOrEmpty { get; set; }
+        public bool InheritIfNullOrEmpty { get; set; } = true;
 
         /// <summary>
         /// Name of property on parent content to inherit from. Default is same name.
