@@ -11,6 +11,15 @@ namespace SampleSite.Models.Pages;
 /// </summary>
 public abstract class SitePageData : PageData, ICustomCssInContentArea
 {
+
+
+    [Inherit(InheritIfNullOrEmpty = true, SearchAllAncestors = true)]
+    public virtual string Area { get; set; }
+
+
+
+
+
     [Display(
         GroupName = Globals.GroupNames.MetaData,
         Order = 100)]
@@ -29,8 +38,13 @@ public abstract class SitePageData : PageData, ICustomCssInContentArea
         set => this.SetPropertyValue(p => p.MetaTitle, value);
     }
 
-    [Inherit(InheritIfNullOrEmpty = true,SearchAllAncestors =true)]
-    public virtual string Area { get; set; }
+
+
+    
+
+
+
+    
 
     [Display(
         GroupName = Globals.GroupNames.MetaData,
