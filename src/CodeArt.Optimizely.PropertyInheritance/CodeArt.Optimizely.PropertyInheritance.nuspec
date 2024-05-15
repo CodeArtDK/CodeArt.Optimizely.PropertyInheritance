@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CodeArt.Optimizely.PropertyInheritance</id>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <title>CodeArt.Optimizely.PropertyInheritance</title>
     <authors>CodeArt Team</authors>
     <owners>CodeArt Team / Open Source</owners>
@@ -10,14 +10,14 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Addon that makes it easy to support property inheritance in Optimizely CMS</description>
     <releaseNotes/>
-    <copyright>Copyright 2023</copyright>
+    <copyright>Copyright 2024</copyright>
     <tags>episerver optimizely property</tags>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/CodeArtDK/CodeArt.Optimizely.PropertyInheritance</projectUrl>
     <RepositoryUrl>https://github.com/CodeArtDK/CodeArt.Optimizely.PropertyInheritance.git</RepositoryUrl>
     <dependencies>
       <group targetFramework="net6.0">
-        <dependency id="EPiServer.CMS.UI.Core" version="[$CmsUIVersion$, $CmsUINextMajorVersion$)" />
+        <dependency id="EPiServer.CMS.UI.Core" version="[12.18.0, 13.0.0)" />
       </group>
     </dependencies>
     <contentFiles>
